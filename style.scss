@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    
+    section{
+        display: block;
+        margin: 100px auto 0 auto;
+        width: 60%;
+        background-color: antiquewhite;
+        padding: 50px 10%;
+    }
+    .nav-menu{
+        background-color: rgb(20, 20, 20);
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        .menu{
+            display: flex;
+            justify-content: flex-end;
+            gap: 0;
+            list-style: none;
+            width: 60%;
+            height: 100%;
+            margin: auto;
+            font-size: 1.5rem;
+            div{
+                vertical-align: middle;
+                display: table-row;
+                a{
+                    display: table-cell;
+                    vertical-align: middle;
+                    height: 100px;
+                    padding: 0 20px;
+                    transition: 0.3s;
+                    color: white;
+                    text-decoration: none;
+                    &:hover{
+                        color: grey;
+                        transition: 0.3s;
+                        background-color: whitesmoke;
+                    }
+                }
+            }
+        }
+    }
+}
+
